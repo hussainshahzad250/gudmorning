@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="row" *ngFor="let data of datas" >
+   <div (click)="getData($event, data)">
+      <img src={{data.url}} height="500" width="400">
+    <div class="center"><b>{{data.categoryName}}</b></div>   
+   </div>
+  </div>
+</ion-content>

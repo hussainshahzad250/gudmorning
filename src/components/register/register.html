@@ -1,0 +1,47 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+          <ion-label floating>First Name</ion-label>
+          <ion-input [(ngModel)]="firstName" type="text" value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Last Name</ion-label>
+            <ion-input [(ngModel)]="lastName" type="text" value=""></ion-input>
+        </ion-item>  
+        
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input [(ngModel)]="email" type="text" value=""></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label floating>Mobile</ion-label>
+            <ion-input [(ngModel)]="mobile" type="text" value=""></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input [(ngModel)]="username" type="text" value=""></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>
+        </ion-item>
+      </ion-list>
+      
+      <div padding>
+        <button ion-button primary block >Sign Up</button>
+        
+      </div>
+
+</ion-content>

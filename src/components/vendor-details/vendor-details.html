@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+    <ion-title>Vendors</ion-title>
+  </ion-navbar>
+</ion-header>
+  
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let vendor of vendors">
+          <ion-thumbnail item-start>
+            <img src="https://jugotest.s3.amazonaws.com/Cake_white.jpg">
+          </ion-thumbnail>
+          <h2>{{vendor.firstName}} {{vendor.lastName}}</h2>
+          <p>{{vendor.contactNumber}}</p>
+          <p>{{vendor.businessName}}</p>
+          Raring : {{vendor.defaultRating}}
+          <button ion-button clear item-end (click)="vendorDetails($event, vendor)">View</button>
+        </ion-item>
+      </ion-list>
+</ion-content>
+
+
+  <!-- <ion-list>
+      <ion-item *ngFor="let vendor of vendors">
+        <ion-avatar item-start>
+          <img src="https://jugotest.s3.amazonaws.com/Cake_white.jpg" height="200" width="100">
+        </ion-avatar>
+        <h2>{{vendor.firstName}} {{vendor.lastName}}</h2>
+        <h3>{{vendor.contactNumber}}</h3>
+        <p>{{vendor.businessName}}</p>
+      </ion-item>
+    </ion-list>
+     -->
+  

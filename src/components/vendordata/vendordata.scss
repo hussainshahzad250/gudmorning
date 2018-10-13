@@ -1,0 +1,14 @@
+vendordata {
+    .image-container{
+        // padding-top: 30px;
+        background-size: cover;
+        min-height: 200px;
+    }
+    .one-image{
+        background-size: cover;
+        min-height: 200px;
+    }
+    .images{
+        column-count: 2;
+    }
+}
