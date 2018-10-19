@@ -46,9 +46,9 @@ export class RestServiceProvider {
   }
 
   getVendorByCategoryId(categoryId) {
-    console.log("categoryId " + categoryId);
-    if (this.vendorById)
-      return Promise.resolve(this.vendorById);
+    // console.log("categoryId " + categoryId);
+    // if (this.vendorById)
+    //   return Promise.resolve(this.vendorById);
     let opt: RequestOptions;
     let myHeaders: Headers = new Headers;
     myHeaders.set('Accept', 'application/json; charset=utf-8');
@@ -66,8 +66,8 @@ export class RestServiceProvider {
 
   getVendorById(vendorId) {
     console.log("vendorId " + vendorId);
-    if (this.vendor)
-      return Promise.resolve(this.vendor);
+    // if (this.vendor)
+    //   return Promise.resolve(this.vendor);
     let opt: RequestOptions;
     let myHeaders: Headers = new Headers;
     myHeaders.set('Accept', 'application/json; charset=utf-8');

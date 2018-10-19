@@ -20,10 +20,12 @@
       <p>{{vendorDetail.email}}</p>
       
     </ion-item>
-    <img src="img/advance-card-bttf.png" style="width:50%;max-width:100px" >
+    <!-- <img src="img/advance-card-bttf.png" style="width:50%;max-width:100px" > -->
+    <span>Tagline</span>
     <ion-card-content>
       <p>{{vendorDetail.tagline}}</p>
     </ion-card-content>
+    <span>Address</span>
     <ion-card-content>
       <p>{{vendorDetail.address}}</p>
     </ion-card-content>
@@ -40,6 +42,12 @@
           <div>4 Comments</div>
         </button>
       </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>Share</div>
+        </button>
+      </ion-col>
       <!-- <ion-col center text-center>
         <ion-note>
           11h ago
@@ -54,13 +62,19 @@
             <ion-col>
               <button ion-button icon-start clear small>
                 <ion-icon name="thumbs-up"></ion-icon>
-                <div>12 Likes</div>
+                <div>Likes</div>
               </button>
             </ion-col>
             <ion-col>
               <button ion-button icon-start clear small>
                 <ion-icon name="text"></ion-icon>
-                <div>4 Comments</div>
+                <div>Comments</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>Share</div>
               </button>
             </ion-col>
             <!-- <ion-col center text-center>
