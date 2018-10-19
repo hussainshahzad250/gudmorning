@@ -1,3 +1,4 @@
+import { VendortabComponent } from './../components/vendortab/vendortab';
 import { Geolocation } from '@ionic-native/geolocation';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -29,7 +30,7 @@ import { Camera } from '@ionic-native/camera';
     LoginComponent,
     RegisterComponent,
     VendorDetailsComponent,
-    VendordataComponent
+    VendordataComponent,VendortabComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +45,7 @@ import { Camera } from '@ionic-native/camera';
     LoginComponent,
     RegisterComponent,
     VendorDetailsComponent,
-    VendordataComponent
+    VendordataComponent,VendortabComponent
   ],
   exports: [
     MyApp,
@@ -53,7 +54,7 @@ import { Camera } from '@ionic-native/camera';
     LoginComponent,
     RegisterComponent,
     VendorDetailsComponent,
-    VendordataComponent
+    VendordataComponent,VendortabComponent
   ],
   providers: [
     StatusBar,

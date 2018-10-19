@@ -10,15 +10,22 @@
 
   <ion-card>
     <ion-item>
-      <ion-avatar item-start>
-        <!-- <img src="img/marty-avatar.png"> -->
+      <ion-avatar item-start >
+          <!-- <img src={{vendor.photos[0].iconUrl}}> -->
+        <img src="https://jugotest.s3.amazonaws.com/%C3%A2%C2%80%C2%AA%2B91%2078285%2088330%C3%A2%C2%80%C2%AC%2020180917_085849.jpg">
       </ion-avatar>
+      <h2><b>{{vendorDetail.businessName}}</b></h2>
       <h2>{{vendorDetail.firstName}} {{vendorDetail.lastName}}</h2>
       <p>{{vendorDetail.contactNumber}}</p>
+      <p>{{vendorDetail.email}}</p>
+      
     </ion-item>
-    <!-- <img src="img/advance-card-bttf.png"> -->
+    <img src="img/advance-card-bttf.png" style="width:50%;max-width:100px" >
     <ion-card-content>
-      <p>{{vendorDetail.tagline}}.</p>
+      <p>{{vendorDetail.tagline}}</p>
+    </ion-card-content>
+    <ion-card-content>
+      <p>{{vendorDetail.address}}</p>
     </ion-card-content>
     <ion-row>
       <ion-col>
@@ -40,12 +47,67 @@
       </ion-col> -->
     </ion-row>
 
+    <ion-slides *ngIf="vendorDetail.photos" padding>
+        <ion-slide *ngFor="let photo of vendorDetail.photos">          
+         <div class="image"> <img class="photo" src={{photo.iconUrl}} alt="Snow" style="width:100%;max-width:300px" id="myImg">
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col>
+            <!-- <ion-col center text-center>
+              <ion-note>
+                11h ago
+              </ion-note>
+            </ion-col> -->
+          </ion-row>
+        </div>
+        </ion-slide>
+    </ion-slides>
+
   </ion-card>
 
-  <ion-segment [(ngModel)]="galleryType">
+  <ion-fab top right edge>
+    <button ion-fab mini>
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <ion-fab-list>
+      <button ion-fab>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="logo-googleplus"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <!-- <ion-tabs>
+    <ion-tab [root]="tab1Root">jhg</ion-tab>
+    <ion-tab [root]="tab2Root">cx</ion-tab>
+    <ion-tab [root]="tab3Root">xcxc</ion-tab>
+  </ion-tabs> -->
+</ion-content>
+
+
+
+
+<!-- <ion-segment [(ngModel)]="galleryType">
     <ion-segment-button value="contact">Contact</ion-segment-button>
     <ion-segment-button value="photos">Photos</ion-segment-button>
-    <!-- <ion-segment-button value="website">Website</ion-segment-button> -->
     <div [ngSwitch]="galleryType">
 
       <ion-grid *ngSwitchCase="'photos'">
@@ -55,17 +117,7 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-      <!-- <ion-grid *ngSwitchCase="'contact'">
-          <ion-col col-6 col-md-4 col-xl-3>
-          <div class="padding">{{vendorDetail.contactNumber}}</div>
-          </ion-col>
-      </ion-grid>
-      <ion-grid *ngSwitchCase="'website'">
-          <ion-col col-6 col-md-4 col-xl-3>
-          <div class="padding">{{vendorDetail.contactNumber}}</div>
-          </ion-col>
-      </ion-grid> -->
-
+      
       <ion-grid>
         <div class="images" *ngSwitchCase="'contact'">
           <div>{{vendorDetail.website}}</div>
@@ -74,12 +126,4 @@
         </div>
       </ion-grid>
     </div>
-  </ion-segment>
-
-</ion-content>
-
-<!-- <div *ngFor="let photo of vendorDetail.photos">
-    <ion-thumbnail item-start>
-      <img src={{photo.iconUrl}}>
-    </ion-thumbnail>
-  </div> -->
+  </ion-segment> -->

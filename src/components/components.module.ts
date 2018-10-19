@@ -5,12 +5,14 @@ import { RegisterComponent } from './register/register';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VendorDetailsComponent } from './vendor-details/vendor-details';
 import { VendordataComponent } from './vendordata/vendordata';
+import { VendortabComponent } from './vendortab/vendortab';
 @NgModule({
 	declarations: [
         LoginComponent,
         RegisterComponent,
     VendorDetailsComponent,
-    VendordataComponent
+    VendordataComponent,
+    VendortabComponent
     ],
 	imports: [
         BrowserModule,
@@ -21,7 +23,8 @@ import { VendordataComponent } from './vendordata/vendordata';
         LoginComponent,
         RegisterComponent,
     VendorDetailsComponent,
-    VendordataComponent
+    VendordataComponent,
+    VendortabComponent
     ]
 })
 export class ComponentsModule {}

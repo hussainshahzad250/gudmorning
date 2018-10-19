@@ -20,7 +20,7 @@ export class RegisterComponent {
   constructor(public restService: RestServiceProvider) {
     console.log('Hello RegisterComponent Component');
     this.text = 'Hello World';
-    restService.loadData().then(data=>{
+    restService.loadCategories().then(data=>{
       console.log(JSON.stringify(data));
     })
 
