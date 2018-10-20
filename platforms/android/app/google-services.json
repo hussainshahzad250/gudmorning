@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "802817717542",
+    "firebase_url": "https://geolocationsatin.firebaseio.com",
+    "project_id": "geolocationsatin",
+    "storage_bucket": "geolocationsatin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802817717542:android:51626a69e272b60a",
+        "android_client_info": {
+          "package_name": "com.gudmorning.shahzad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802817717542-m052r3veblbi6ifm9j50pcmfq36p47rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfzmja1MIVbPVrM4g13YG5swbgHIfQXCQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

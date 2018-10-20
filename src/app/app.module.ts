@@ -20,6 +20,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Camera } from '@ionic-native/camera';
+import { Push } from '@ionic-native/push';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { Camera } from '@ionic-native/camera';
   imports: [
     BrowserModule,
     HttpModule,
+    
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -61,6 +63,7 @@ import { Camera } from '@ionic-native/camera';
     SplashScreen,
     Camera,
     Geolocation,
+    Push,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RestServiceProvider
   ]

@@ -61,9 +61,9 @@
       </ion-col> -->
     </ion-row>
 
-    <ion-slides *ngIf="vendorDetail.photos" padding>
-        <ion-slide *ngFor="let photo of vendorDetail.photos">          
-         <div class="image"> <img class="photo" src={{photo.iconUrl}} alt="Snow" style="width:100%;max-width:300px" id="myImg">
+    <ion-slides *ngIf="vendorDetail.photos" pager="true">
+        <ion-slide *ngFor="let photo of vendorDetail.photos" >          
+         <div class="image"> <img class="photo" src={{photo.iconUrl}} alt="Snow"  id="myImg">
           <ion-row>
             <ion-col>
               <button ion-button icon-start clear small>

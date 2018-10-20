@@ -7,35 +7,46 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
     },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
     },
     "cordova-plugin-ionic-webview": {
       "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "cordova-plugin-ionic-keyboard": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
     },
     "cordova-plugin-photo-library": {
-      "PACKAGE_NAME": "io.ionic.shahzad"
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
     },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "io.ionic.shahzad"
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
+    },
+    "phonegap-plugin-push": {
+      "ANDROID_SUPPORT_V13_VERSION": "27.+",
+      "FCM_VERSION": "11.6.2",
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "io.ionic.shahzad"
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
+    },
+    "phonegap-plugin-multidex": {
+      "PACKAGE_NAME": "com.gudmorning.shahzad"
     }
   }
 }
