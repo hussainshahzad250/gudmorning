@@ -25,6 +25,12 @@
     <ion-card-content>
       <p>{{vendorDetail.tagline}}</p>
     </ion-card-content>
+    <div *ngIf="vendorDetail.aboutText">
+    <span>About Us</span>
+    <ion-card-content>
+      <p>{{vendorDetail.aboutText}}</p>
+    </ion-card-content>
+  </div>
     <span>Address</span>
     <ion-card-content>
       <p>{{vendorDetail.address}}</p>

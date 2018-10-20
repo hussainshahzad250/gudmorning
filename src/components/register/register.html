@@ -1,12 +1,3 @@
-
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-  </ion-navbar>
-</ion-header>
-
 <ion-content>
     <ion-list>
         <ion-item>
@@ -40,7 +31,8 @@
       </ion-list>
       
       <div padding>
-        <button ion-button primary block >Sign Up</button>
+        <button ion-button primary block (click)="register()" >Sign Up</button>
+        <button ion-button primary block color="light" (click)="goToLogin()">Sign In</button>
         
       </div>
 

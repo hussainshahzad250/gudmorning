@@ -1,3 +1,4 @@
+import { RegisterComponent } from './../register/register';
 import { LoginRequest, LoginResponse } from './user';
 import { HomePage } from './../../pages/home/home';
 import { NavController, ToastController } from 'ionic-angular';
@@ -31,6 +32,14 @@ export class LoginComponent {
   }
 
   login() {
+    // TOAST START
+    let toast = this.toastCtrl.create({
+      message: 'Login successfully !',
+      duration: 3000,
+      position: 'top'
+    });
+    toast.present();
+    // TOAST END
     this.navCtrl.push(HomePage, { event: this.username });
     // console.log("Hello " + this.username + " " + this.password);
     // this.loginRequest.username = this.username;
@@ -81,6 +90,10 @@ export class LoginComponent {
     // });
     // toast.present();
     // TOAST END
+  }
+
+  goToRegister(){
+    this.navCtrl.push(RegisterComponent);
   }
   
 
