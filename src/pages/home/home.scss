@@ -1,10 +1,32 @@
 page-home {
 
+    .abc{
+        margin: -70px;
+        padding: 2px;
+        width: 165px;
+        height: 184px;
+        border-radius: 2em;
+    }
+    
+    .row {
+        display: inline-flex;
+        padding: 75px;
+    }
+    .center{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 15px;
+        padding-left:15%; 
+    } 
+    img{
+        height: 160px;
+        width: 220px;
+        border-radius: 1ch;
+    }   
+    .label{
+        padding-left: 45px;
+    }
 }
-.center{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 15px;
-    padding-left:15%; 
-}
+
+

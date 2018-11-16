@@ -7,11 +7,12 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
   <div class="row" *ngFor="let data of datas">
-    <div (click)="getData($event, data)">
-      <img src={{data.url}} height="500" width="400">
-      <div class="center"><b>{{data.categoryName}}</b></div>
+    <div class="abc" (click)="getData($event, data)">
+      <img src={{data.url}} height="160" width="220">
+      <label class="label"><b>{{data.categoryName}}</b></label>
     </div>
   </div>
+
 </ion-content>

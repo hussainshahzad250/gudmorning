@@ -25,9 +25,9 @@
         <ion-thumbnail>
           <ng-template #content><img src="https://jugotest.s3.amazonaws.com/%C3%A2%C2%80%C2%AA%2B91%2078285%2088330%C3%A2%C2%80%C2%AC%2020180917_085849.jpg" height="80" width="80"></ng-template>
         </ion-thumbnail>
+        <h2 class="font">{{vendor.businessName}}</h2>
         <h2>{{vendor.firstName}} {{vendor.lastName}}</h2>
-        <p>{{vendor.contactNumber}}</p>
-        <p>{{vendor.businessName}}</p>
+        <p>{{vendor.contactNumber}}</p>        
         Raring : {{vendor.defaultRating}}
         <button ion-button clear item-end (click)="vendorDetails(vendor)">View</button>
       </ion-item>
