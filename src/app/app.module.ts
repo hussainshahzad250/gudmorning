@@ -1,3 +1,10 @@
+import { VideoPipe } from './../providers/video.pipe';
+import { VideoDetailsPage } from './../pages/video-details/video-details';
+import { VideoListPage } from './../pages/video-list/video-list';
+import { VideoService } from './../providers/video.service';
+
+import { FormsModule } from '@angular/forms';
+import { VideoCenterPage } from './../pages/video-center/video-center';
 import { VendortabComponent } from './../components/vendortab/vendortab';
 import { Geolocation } from '@ionic-native/geolocation';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,6 +28,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Camera } from '@ionic-native/camera';
 import { Push } from '@ionic-native/push';
+// import { AngularFireDatabaseModule } from 'angularfire2/database';
+// import { AngularFireModule } from 'angularfire2';
+// import { AngularFirestoreModule } from 'angularfire2/firestore';
+
+
+const firebaseConfig={   
+  apiKey: "AIzaSyAqFi_L4pidm-KZBw2feEuv0iU049ZC910",
+  authDomain: "gudmorning-sahebganj.firebaseapp.com",
+  databaseURL: "https://gudmorning-sahebganj.firebaseio.com",
+  projectId: "gudmorning-sahebganj",
+  storageBucket: "gudmorning-sahebganj.appspot.com",
+  messagingSenderId: "1009300281995"
+}
 
 
 @NgModule({
@@ -31,12 +51,25 @@ import { Push } from '@ionic-native/push';
     LoginComponent,
     RegisterComponent,
     VendorDetailsComponent,
-    VendordataComponent,VendortabComponent
+    VendordataComponent,
+    VendortabComponent,
+
+    VideoCenterPage,
+    VideoListPage,
+    VideoDetailsPage,
+    VideoListPage,
+    VideoPipe
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    
+    HttpModule,    
+    BrowserModule, FormsModule, HttpModule,
+    // AngularFireModule.initializeApp(firebaseConfig),
+    // AngularFireDatabaseModule,
+
+    // AngularFireModule.initializeApp(firebaseConfig),
+    // AngularFirestoreModule, 
+
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -47,7 +80,14 @@ import { Push } from '@ionic-native/push';
     LoginComponent,
     RegisterComponent,
     VendorDetailsComponent,
-    VendordataComponent,VendortabComponent
+    VendordataComponent,
+    VendortabComponent,
+    VideoCenterPage,
+    VideoListPage,
+    VideoDetailsPage,
+    VideoListPage
+
+
   ],
   exports: [
     MyApp,
@@ -56,7 +96,12 @@ import { Push } from '@ionic-native/push';
     LoginComponent,
     RegisterComponent,
     VendorDetailsComponent,
-    VendordataComponent,VendortabComponent
+    VendordataComponent,
+    VendortabComponent,
+    VideoCenterPage,
+    VideoListPage,
+    VideoDetailsPage,
+    VideoListPage
   ],
   providers: [
     StatusBar,
@@ -64,6 +109,7 @@ import { Push } from '@ionic-native/push';
     Camera,
     Geolocation,
     Push,
+    VideoService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RestServiceProvider
   ]
